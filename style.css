@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*Variáveis são espaços na memória armazenar alguma coisa*/
+
+:root{
+    --cor1: #267365;
+    --cor2: #F2CB05;
+    --cor3: #F29F05;
+    --cor4: #F28705;
+    --cor5:  #F23030; 
+    --cor6: #000;
+    --cor7: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Selecionando elementos - tag, .class, #id*/
+body{
+    background-color: var(--cor1);
+
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor2),var(--cor4) );/*direcao, corcomeça, cortermina */
+    min-height: 130px;/*altura mínima*/
+    text-align: center;
+    padding-top: 40px;/*Espaço dentro da caixa*/
+}
+
+header > h1{
+    color: var(--cor6);
+    font-weight: 900;/*100 a 900, bold, bolder*/
+    margin-bottom: 10px;/*espaço fora da caixa em relação ao próximo elemento*/
+} 
+
+header > p{} 
+
+nav{
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow: -1px 3px 2px 0px var(--cor6);/*x, y, extensão, visualização, cor*/
+}
+
+nav>a{
+    color: var(--cor6);
+    padding: 10px;
+    text-decoration: none;/*Dashed, dotted, double, solid*/
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
