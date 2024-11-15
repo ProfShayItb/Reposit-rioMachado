@@ -2,61 +2,155 @@
 
 /*Variáveis são espaços na memória armazenar alguma coisa*/
 
-:root{
+:root {
     --cor1: #267365;
     --cor2: #F2CB05;
     --cor3: #F29F05;
     --cor4: #F28705;
-    --cor5:  #F23030; 
+    --cor5: #F23030;
     --cor6: #000;
     --cor7: #fff;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /*Selecionando elementos - tag, .class, #id*/
-body{
+body {
     background-color: var(--cor1);
 
 }
 
-header{
-    background-image: linear-gradient(to top, var(--cor2),var(--cor4) );/*direcao, corcomeça, cortermina */
-    min-height: 130px;/*altura mínima*/
+header {
+    background-image: linear-gradient(to top, var(--cor2), var(--cor4));
+    /*direcao, corcomeça, cortermina */
+    min-height: 130px;
+    /*altura mínima*/
     text-align: center;
-    padding-top: 40px;/*Espaço dentro da caixa*/
+    padding-top: 40px;
+    /*Espaço dentro da caixa*/
 }
 
-header > h1{
+header>h1 {
     color: var(--cor6);
-    font-weight: 900;/*100 a 900, bold, bolder*/
-    margin-bottom: 10px;/*espaço fora da caixa em relação ao próximo elemento*/
-} 
+    font-weight: 900;
+    /*100 a 900, bold, bolder*/
+    margin-bottom: 10px;
+    /*espaço fora da caixa em relação ao próximo elemento*/
+}
 
-header > p{} 
+header>p {}
 
-nav{
+nav {
     background-color: var(--cor2);
     padding: 10px;
-    box-shadow: -1px 3px 2px 0px var(--cor6);/*x, y, extensão, visualização, cor*/
+    box-shadow: -1px 3px 2px 0px var(--cor6);
+    /*x, y, extensão, visualização, cor*/
 }
 
-nav>a{
+nav>a {
     color: var(--cor6);
     padding: 10px;
-    text-decoration: none;/*Dashed, dotted, double, solid*/
+    text-decoration: none;
+    /*Dashed, dotted, double, solid*/
     font-weight: bold;
     font-size: 1.1rem;
+    border-radius: 2px;
+    /*Arredondamento das vértices*/
+    transition-duration: 0.6s;
+}
+
+nav>a:hover {
+    /*Pseudoclasse - adiciona um estado especial*/
+    background-color: var(--cor4);
+    /* font-size: 20px; */
+    color: var(--cor1);
+}
+
+main {
+    background-color: var(--cor7);
+    color: #000;
+    min-width: 320px;
+    /*Largura mínima*/
+    max-width: 1000px;
+    /*Largura máxima*/
+    margin: auto;
+    /*utilizado nesse contexto para centralizar o main*/
+    margin-top: 3px;
+    /*Espaço fora da caixa pra cima*/
+    padding: 20px;
+    /*Espaçamento dentro do elemento - caixa)*/
+    text-align: center;
+    /*alinhamento do texto - left, rigth, justify, center*/
+    border-bottom-left-radius: 10px;
+    /*Arreondamento da vértice da borda inferior esquerda*/
+    border-bottom-right-radius: 10px;
+    /*Arreondamento da vértice da borda inferior direita*/
+    box-shadow: 3px 2px 5px 0px;
+    /*Sombra da caixa*/
+
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    /*Gradiente linear(direção, corquecomeça, corquetermina)*/
+    padding: 5px 0;
+    margin-bottom: 15px;
+
+}
+
+main p {
+    font-size: 1.2em;
+    /*em, rem, px, %*/
+    text-align: justify;
+    text-indent: 30px;
+    /*Espaçamento de primeira linha de parágrafo*/
+    margin: 15px 0;
+}
+
+main img {
+    width: 30%;
+    border: 10px double black;/*espessura estilo cor*/
+
 }
 
 
+iframe{
+    width: 90%;
+    border: 5px solid black;/*espessura estilo cor*/
+}
 
+figcaption{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
 
+pre{
+    font-size: 12px;
+}
 
+aside{
+    background-color: var(--cor2);
+    padding: 20px 0;
+    border-radius: 5px;
+}
 
+aside > ul{
+    list-style-position: inside;/*posição do marcador da lista*/
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+aside > h3{
+    background-color: var(--cor4);
+    padding: 10px;
+    margin: -20px -0.5px 0px -0.5px;
+    border-radius: 5px;
+}
 
-
+footer{
+    text-align: center;
+}
